@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="./asset/profile 4.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="theme-switch" aria-label="Toggle Theme">
+        <!-- Moon Icon -->
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#1f1f1f">
+            <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+        </svg>
+        <!-- Sun Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+        </svg>
+    </button>
+
+    <script>
+        const toggleBtn = document.querySelector('.theme-switch');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+    <div class="hero_section">
+        <!-- navi -->
+        <div class="nav">
+            <ul class="nav__list">
+                <li>
+                    <a href="#home" title="Home" class="nav__icon active"><i class='bx bx-home-alt-2'></i></a>
+                </li>
+                <a href="#education" title="education" class="nav__icon"><i class='bx bxl-redux'></i></a>
+                </li>
+                <li>
+                    <a href="#project" title="Project" class="nav__icon"><i class='bx bx-folder'></i></a>
+                </li>
+                <li>
+                    <a href="#services" title="Services" class="nav__icon"><i class='bx bx-file-blank'></i></a>
+                </li>
+                <li>
+                    <a href="#contect" title="Contect" class="nav__icon"><i class='bx bx-send'></i></a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="home section" id="home">
+                <div class="div__container container grid">
+                    <div class="profile">
+                        <img src="./asset/profile 4.png" alt="img" class="profile__img">
+                        <div class="profile__content">
+                            <h1 class="profile__name">Yuthaya Karthick</h1>
+                            <div class="profile__button">
+                                <a href="#project" class="button">Project</a>
+                                <a href="#services" class="button button_black">Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- info -->
+        <div class="info">
+            <div class="info__data">
+                <div class="info__circle"></div>
+                <h1 class="info__name">INFO</h1>
+            </div>
+            <div class="info__image">
+                <img src="./asset/profile 4.png" alt="image" class="info_img">
+            </div>
+            <div class="info__description">
+                <p>Passionate about creating and designing
+                    websites with the best engaging interface</p>
+            </div>
+            <a href="./asset/files/Resume.pdf" target="_blank" class="button button_cv">Download Cv </a>
+        </div>
+        <!-- about -->
+        <div class="about">
+            <h3 class="about__name">
+                Yuthaya Karthick <br><b>Web Designer & Developer</b>
+            </h3>
+            <div class="about__social">
+                <a href="#" title="Linkedin" class="about__link"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.behance.net/yuthayakarthick" title="Behance" class="about__link"><i
+                        class='bx bxl-behance'></i></a>
+                <a href="#" title="Github" class="about__link"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="about__image">
+                <img src="./asset/profile 4.png" alt="" class="about__img">
+            </div>
+            <p class="about__describtion">
+                I’m a B.Tech Computer Science student with a strong interest in
+                visual design and user experience.Trained in Graphic Design and
+                UI/UX, with skills in Adobe Creative Suite, typography, and layout
+                design.
+                <br>
+                <br>
+                I’m a curious and adaptable learner, aiming to grow as a
+                creative, user-focused designer.a passionate creative professional with skills in graphic design, video
+                editing,
+                animation, and development. With a blend of technical expertise and artistic vision, I enjoy crafting
+                engaging digital experiences that are both functional and visually impactful.
+            </p>
+
+            <a href="#contect" class="button about__button">Contact Me</a>
+        </div>
+        <!-- skill -->
+        <div class="skills">
+            <h2 class="skill__title">Skills</h2>
+            <div class="skill__item">
+                <img src="./asset/photo/html-1.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/css-3.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/adobe-photoshop-2.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/adobe-illustrator-cc-3.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/adobe-indesign-cc-icon.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/coreldraw-gs2019-2.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/figma-icon.svg" alt="image" class="skill__item skill_icon">
+                <img src="./asset/photo/premiere-pro-cc.svg" alt="image" class="skill__item skill_icon">
+            </div>
+            <p class="skill__description">
+                Visit the project section to see the
+                work doue with these web technology
+            </p>
+        </div>
+    </div>
+    <!-- education -->
+    <div class="education__section" id="education">
+        <div class="education__data">
+            <div class="education__circle"></div>
+            <div class="education__name">Education</div>
+        </div>
+        <div class="education__heading">
+            <p>Academic Journey That <br> Shaped My Skills</p>
+        </div>
+        <div class="sub__heading">
+            <p>Certified Knowledge</p>
+        </div>
+        <div class="education__card">
+            <div class="clg buff_clg">
+                <h2 class="degree">B.Tech Computer Science <br>
+                    Engineering</h2>
+                <h3 class="year">2020-2024</h3>
+                <p class="edu__description">I have completed my B.Tech in Computer Science with a CGPA of 7.6</p>
+            </div>
+
+            <div class="clg buff">
+                <h2 class="degree">Master of Design <br>Technology</h2>
+                <h3 class="year">2024-2025</h3>
+                <p class="edu__description">I have completed my master course <br> with A <sup>+</sup></p>
+            </div>
+        </div>
+    </div>
+    <!-- project -->
+    <br>
+    <br>
+    <div class="project__section">
+        <section class="project section" id="project">
+            <h2 class="section__tittle tittle_resent">RECENT PROJECT</h2>
+            <br>
+            <div class="project__container">
+                <article class="project__card">
+                    <a href="#" class="project__image">
+                        <img src="./asset/What Does a Web Developer Do (and How Do I Become One)_.jpeg" alt="imag"
+                            class="project__img">
+                    </a>
+                    <div class="project__data">
+                        <h3 class="project__name">Web development</h3>
+                        <p class="project__description">
+                            A fully responsive web development project built with modern design, smooth functionality,
+                            and optimized performance.
+                        </p>
+                        <br>
+                        <div class="project__skills">
+                            <img src="./asset/photo/html-1.svg" alt="img" class=" project_logo">
+                            <img src="./asset/photo/css-3.svg" alt="img" class=" project_logo">
+                        </div>
+                        <a href="#" class="project__button">
+                            <i class='bx bx-link'></i>
+                            <span>Visit project</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="project section" id="project">
+            <div class="project__container">
+                <article class="project__card2">
+                    <a href="#" class="project__image">
+                        <img src="./asset/UI_UX Design - Cover.jpeg" alt="imag" class="project__img">
+                    </a>
+                    <div class="project__data">
+                        <h3 class="project__name project__ui">UI UX</h3>
+                        <p class="project__description">
+                            A creative UI/UX design focused on intuitive user flow, modern aesthetics,
+                            and seamless digital experiences.
+                        </p>
+                        <br>
+                        <div class="project__skills project__skills_2">
+                            <img src="./asset/photo/figma-icon.svg" alt="img" class=" project_logo">
+                        </div>
+                        <a href="#" class="project__button">
+                            <i class='bx bx-link'></i>
+                            <span>Visit project</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="project section" id="project">
+            <div class="project__container">
+                <article class="project__card3">
+                    <a href="#" class="project__image">
+                        <img src="./asset/download.jpeg" alt="imag" class="project__img">
+                    </a>
+                    <div class="project__data">
+                        <h3 class="project__name project__logo">Logo Design</h3>
+                        <p class="project__description">
+                            "A custom-designed logo that represents my creative identity with clarity and minimalism."
+                        </p>
+                        <br>
+                        <div class="project__skills">
+                            <img src="./asset/photo/adobe-photoshop-2.svg" alt="img" class=" project_logo">
+                            <img src="./asset/photo/adobe-illustrator-cc-3.svg" alt="img" class=" project_logo">
+                        </div>
+                        <a href="#" class="project__button">
+                            <i class='bx bx-link'></i>
+                            <span>Visit project</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="project section" id="project">
+            <div class="project__container">
+                <article class="project__card4">
+                    <a href="#" class="project__image">
+                        <img src="./asset/Search Projects __ Photos, videos, logos, illustrations and branding.jpeg"
+                            alt="imag" class="project__img">
+                    </a>
+                    <div class="project__data">
+                        <h3 class="project__name branding">Branding</h3>
+                        <p class="project__description">
+                            Havee is a coffee brand crafted to deliver rich flavor, bold aroma,
+                            and a refreshing brew experience in every cup.
+                        </p>
+                        <br>
+                        <div class="project__skills">
+                            <img src="./asset/photo/adobe-photoshop-2.svg" alt="img" class=" project_logo">
+                            <img src="./asset/photo/adobe-illustrator-cc-3.svg" alt="img" class=" project_logo">
+                        </div>
+                        <a href="#" class="project__button">
+                            <i class='bx bx-link'></i>
+                            <span>Visit project</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="project section" id="project">
+            <div class="project__container">
+                <article class="project__card5">
+                    <a href="https://www.behance.net/gallery/209810803/yukipaws-Graphic-Design-Portfolio"
+                        class="project__image">
+                        <img src="./asset/Portfolio.jpeg" alt="imag" class="project__img">
+                    </a>
+                    <div class="project__data">
+                        <h3 class="project__name branding2">Branding</h3>
+                        <p class="project__description">
+                            Yukipaws is a pet care brand offering premium products and services designed to keep pets
+                            happy,
+                            healthy, and loved.
+                        </p>
+                        <br>
+                        <div class="project__skills">
+                            <img src="./asset/photo/adobe-photoshop-2.svg" alt="img" class=" project_logo">
+                            <img src="./asset/photo/adobe-illustrator-cc-3.svg" alt="img" class=" project_logo">
+                        </div>
+                        <a href="#" class="project__button">
+                            <i class='bx bx-link'></i>
+                            <span>Visit project</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <!-- service -->
+    <section class="service section" id="services">
+        <h2 class="section__tittle">SERVICES I OFFER</h2>
+        <div class="services">
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <div class="services__icon">
+                        <div class="services__circle"></div>
+                        <i class='bx bx-code-block'></i>
+                    </div>
+                    <h3 class="services__name">Web Development</h3>
+                    <p class="services__description">
+                        I build responsive, high-performance websites that deliver seamless user experiences.
+                        From static sites to dynamic platforms, I code with precision.
+                    </p>
+                </article>
+            </div>
+
+            <div class="services__container container grid">
+                <article class="services__card services__card2">
+                    <div class="services__icon">
+                        <div class="services__circle"></div>
+                        <i class='bx bx-code-block'></i>
+                    </div>
+                    <h3 class="services__name">Web Design</h3>
+                    <p class="services__description">
+                        Creative and clean web designs that reflect your brand identity.
+                        I craft layouts that balance aesthetics with usability
+                    </p>
+                </article>
+            </div>
+
+            <div class="services__container container grid">
+                <article class="services__card services__card3">
+                    <div class="services__icon">
+                        <div class="services__circle"></div>
+                        <i class='bx bxs-videos'></i>
+                    </div>
+                    <h3 class="services__name">Video Editing</h3>
+                    <p class="services__description">
+                        Engaging video edits that tell your story with style.
+                        Smooth transitions, effects, and sound design bring your content to life.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <div class="services2">
+            <div class="services__container container grid">
+                <article class="services__card services__card1 ">
+                    <div class="services__icon">
+                        <div class="services__circle"></div>
+                        <i class='bx bxs-pen'></i>
+                    </div>
+                    <h3 class="services__name">Logo Design</h3>
+                    <p class="services__description">
+                        Unique and memorable logos tailored to your brand's voice.
+                        I combine simplicity and meaning for lasting impact.
+                    </p>
+                </article>
+            </div>
+
+            <div class="services__container container grid">
+                <article class="services__card services__card2">
+                    <div class="services__icon">
+                        <div class="services__circle"></div>
+                        <i class='bx bxl-adobe'></i>
+                    </div>
+                    <h3 class="services__name">Branding</h3>
+                    <p class="services__description">
+                        Complete brand strategies that elevate your business identity.
+                        From visuals to tone, I help create a cohesive presence.
+                    </p>
+                </article>
+            </div>
+
+            <div class="services__container container grid">
+                <article class="services__card services__card3">
+                    <div class="services__icon">
+                        <div class="services__circle"></div>
+                        <i class='bx bxl-figma'></i>
+                    </div>
+                    <h3 class="services__name">UI | UX</h3>
+                    <p class="services__description">
+                        User-focused interfaces that are both intuitive and visually appealing.
+                        I prioritize clarity, consistency, and engagement.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- contect -->
+    <section class="contect section" id="contect">
+        <h2 class="section__tittle">CONTACT ME</h2>
+        <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact__form">
+                <div class="contact__group grid">
+                    <input type="text" name="User__name" placeholder="Name" class="contact__input">
+                    <br>
+                    <br>
+                    <input type="email" name="User__email" placeholder="Email" class="contact__input">
+                </div>
+
+                <textarea name="user__message" placeholder="Message" class="contact__input contact__area"></textarea>
+                <div class="contact__button">
+                    <button type="submit" class="button contact__button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+
+        </div>
+        <div class="footer__social">
+            <a href="" target="_blank" class="footer__social-link facebook">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="" target="_blank" class="footer__social-link">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="" target="_blank" class="footer__social-link">
+                <i class='bx bxl-behance'></i>
+            </a>
+        </div>
+        <div class="footer_content">
+            <p class="footer__para">Thanks for visiting! Let’s connect — LinkedIn | GitHub</p>
+            <p class="footer__main_para">Thank you for exploring my work.
+                I’m passionate about design, development, and bringing ideas to life. Whether it's a project,
+                collaboration, <br> or a quick chat I’m just a message away.
+                Feel free to connect with me through email or social platforms. <br>
+                Let’s build something great together!</p>
+        </div>
+    </footer>
+
+    <div class="scroll-container" id="scrollContainer">
+        <div class="scroll-loader-ring" id="scrollLoader"></div>
+        <div class="scroll-button" id="scrollTopBtn">↑</div>
+    </div>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        const loader = document.getElementById("scrollLoader");
+        const container = document.getElementById("scrollContainer");
+
+        // Show button when scrolled down
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                container.style.display = "block";
+            } else {
+                container.style.display = "none";
+            }
+        });
+
+        // Click scroll button
+        scrollBtn.addEventListener("click", () => {
+            // Show red loading ring
+            loader.style.display = "block";
+            scrollBtn.style.pointerEvents = "none"; // prevent double clicks
+
+            // After 1 second, scroll and hide loader
+            setTimeout(() => {
+                loader.style.display = "none";
+                scrollBtn.style.pointerEvents = "auto";
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>

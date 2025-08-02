@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll to Top with Red Loading Ring</title>
+  <style>
+    body {
+      height: 3000px;
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #eee, #aaa);
+    }
+
+    /* Scroll Button Container */
+    .scroll-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+      display: none;
+    }
+
+    /* Red Loading Ring */
+    .scroll-loader-ring {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 5px solid transparent;
+      border-top: 5px solid red;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      display: none;
+      box-shadow: 0 0 10px red;
+    }
+
+    /* Black Circle Button with Arrow */
+    .scroll-button {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 50px;
+      height: 50px;
+      background: black;
+      color: white;
+      border-radius: 50%;
+      border: 3px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .scroll-button:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="padding: 20px;">Scroll Down ⬇️</h1>
+
+  <!-- Scroll Button + Loader Ring -->
+  <div class="scroll-container" id="scrollContainer">
+    <div class="scroll-loader-ring" id="scrollLoader"></div>
+    <div class="scroll-button" id="scrollTopBtn">↑</div>
+  </div>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    const loader = document.getElementById("scrollLoader");
+    const container = document.getElementById("scrollContainer");
+
+    // Show button when scrolled down
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        container.style.display = "block";
+      } else {
+        container.style.display = "none";
+      }
+    });
+
+    // Click scroll button
+    scrollBtn.addEventListener("click", () => {
+      // Show red loading ring
+      loader.style.display = "block";
+      scrollBtn.style.pointerEvents = "none"; // prevent double clicks
+
+      // After 1 second, scroll and hide loader
+      setTimeout(() => {
+        loader.style.display = "none";
+        scrollBtn.style.pointerEvents = "auto";
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
